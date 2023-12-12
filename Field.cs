@@ -6,9 +6,9 @@ internal class Field
     public int[,] Cells { get; set; }
 
     internal bool CheckRobotEndGame(Robot robot)
-    { 
+    {
         // сравнение координат робота с координатами
         // финишной точки
+        return true;
     }
 }
-
