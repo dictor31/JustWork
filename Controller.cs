@@ -26,5 +26,10 @@ internal class Controller
 		mainCommander.Execute(request.Select(s=>int.Parse(s.ToString())).ToArray());
 
 		mainCommander.SetInterpretator(new RobotCommander());
+		while (true)
+		{
+			request = Console.ReadLine();
+			mainCommander.Execute(request.Select(s => int.Parse(s.ToString())).ToArray());
+		}
 	}
 }

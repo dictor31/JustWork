@@ -17,6 +17,14 @@ internal class RobotCommander : ICommander
 		// и передается в очередь выполнения команд
 		// здесь какой-нибудь switch, который по номеру создается команду
 		// можно чередовать команды движения и рисования
+		for (int i = 0; i < value.Length; i++) 
+		{
+			switch (value[i]) 
+			{
+			
+
+			}
+		}
 	}
 
 	void RunCommand(object obj)
