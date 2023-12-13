@@ -10,7 +10,7 @@ internal class Robot
     public static Robot GetInstance()
     {
         if (instance == null)
-            instance = 
+            instance = null; // говно
         return instance;
     }
 }
