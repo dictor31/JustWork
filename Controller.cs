@@ -26,10 +26,10 @@ internal class Controller
 		mainCommander.Execute(request.Select(s=>int.Parse(s.ToString())).ToArray());
 
 		mainCommander.SetInterpretator(new RobotCommander());
-		/*while (*//*Координаты робота != конечная точка*//*)
+		Robot robot = new Robot();
 		{
 			request = Console.ReadLine();
 			mainCommander.Execute(request.Select(s => int.Parse(s.ToString())).ToArray());
-		}*/
+		}
 	}
 }

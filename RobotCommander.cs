@@ -21,15 +21,21 @@ internal class RobotCommander : ICommander
 		{
 			switch (value[i]) 
 			{
-			
-
+				case 1: new MoveRobotUpCommand();
+					break;
+				case 2: new MoveRobotDownCommand();
+					break;
+				case 3: new MoveRobotLeftCommand();
+					break;
+				case 4: new MoveRobotRightCommand();
+					break;
 			}
 		}
 	}
 
 	void RunCommand(object obj)
 	{
-		while (!Field.GetInstance().CheckRobotEndGame(Robot.GetInstance()))
+		while (!Field.GetInstance().CheckRobotEndGame())
 		{
 			Thread.Sleep(1000);
 			if (robotCommands.Count > 0)

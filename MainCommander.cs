@@ -3,7 +3,7 @@
 internal class MainCommander : ICommander
 {
     ICommander commander;
-    internal void SetInterpretator(ICommander commander)
+    internal void SetInterpretator(ICommander commander)   
     {
         this.commander = commander;
     }
